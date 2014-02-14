@@ -1,0 +1,35 @@
+????????????? Analyzing Data From 1point3acres
+=================
+
+??????????????,????????????? By hacking on data we are familiar with and solving problems we are curious about, we hope to hone our skills as data scientists.
+
+
+?? Background
+----------------
+[???????](http://www.1point3acres.com/bbs)?????????????????, its main users are graduate school applicants, undergraduate and graduate students studying in North America, and young professionals, mostly in high tech fields. Majority of its users are between 18 and 25 years old, highly educated and either have or are working on an advanced degree. 
+
+
+?? Data
+----------
+The Forum for 1point3acres.com was founded on 2009/05/15. Posting behaviors from its **100,000+ users** in **over 1 million posts** have been recorded in the database since then. 
+
+\ data folder: hopefully file names are self explanatory
+
+Where did the data come from:
+Discuz database:Full data schema is explained [here](http://faq.comsenz.com/library/database/x25/x25_index.htm)
+It's not an exact match of the current version of discuz we have, but should be OK as a starting point. 
+
+SQL queries were also included for completeness. 
+
+Data is intentionally stripped to any obvious user information like full user name, ip etc. Please respect other's and try not to use the data for anything other than education purposes. 
+
+?? Analysis
+-----------
+Minimal data cleaning is needed.
+Feel free to analyze the data for any questions that interest you. All we ask is that you share the results as well as the methods/code. 
+
+We encourage reproducible research, our common tools are R (knitr, Rmd, etc), Python (iPython Notebook etc), etc.
+
+???? Us, the Analyzers
+------------
+We are users of the forum, interested in finding insights from data. In our daily lives we are (aspiring) statisticians, data scientists, and coders. 
