@@ -3,6 +3,13 @@ Analyzing 1point3acres Data
 
 By hacking on data we are familiar with and solving problems we are curious about, we hope to hone our skills as data scientists.
 
+How to Join
+----------
+Feel free to analyze the data for any questions that interest you, using whatever tools you like. All we ask is that you share the results as well as the methods/code. 
+
+We encourage reproducible research. Our tools include R (knitr, Rmd, etc), Python (iPython Notebook etc), etc.
+
+Data science, describe, predict and prescribe. 
 
 Background
 ----------------
@@ -21,22 +28,14 @@ Where did the data come from:
 Discuz database:Full data schema is explained [here](http://faq.comsenz.com/library/database/x25/x25_index.htm).
 It's not an exact match of the current version of discuz we have, but should be OK as a starting point. 
 
-SQL queries were also included for completeness. 
+SQL queries were also included for completeness. We can not expose the whole Database to you but feel free to ask for additional data.
 
 Data is intentionally stripped to any obvious user information like full user name, ip etc. Please respect other's and try not to use the data for anything other than education purposes. 
 
-Analysis
+Analysis: Story telling with Data 
 -----------
-Minimal data cleaning is needed.
-Feel free to analyze the data for any questions that interest you. All we ask is that you share the results as well as the methods/code. 
-
-Data science, describe, predict and prescribe. 
-
-We encourage reproducible research. Our tools include R (knitr, Rmd, etc), Python (iPython Notebook etc), etc.
-
-### Story telling with Data ####
-#####Attrition of users:#### 
-When a user fails to visit the forum since at least 120 days ago, we consider the user "lost" forever. 
+#####Attrition of users: 
+A user is considered active if there is any activity during the past 120 days, and inactive otherwise. 
 
 1. What is the attrition pattern of the whole forum over time? 
 2. What's the typical duration of a user on the forum? 
@@ -51,7 +50,12 @@ Time to event (survival) data analysis may be used.
 4. The day/night effect can be more complicated. By analyzing ip address of visitors, we can see the shift in user population. Users come from two main areas, China, and North America. With timezones approximately half a day apart, this dilutes the usual day/night effect. An analysis of the user geo-location over time can also shed some light on the growth in popularity of the forum.
 5. Posts follow a high skewed distribution, where a small fraction of user accounted for a vast majority of activities on the forum. 
 
-Even though longitudinal study can not be used to make causal inference, it may serve as an indicator of overall health of the forum. (Times series analysis)
+
+##### Studying Effect of Website Promotions
+Small scale forums like this does not have the proper infrastructure to carry out online experimentation available to IT companies. It is therefore hard to know whether a promotional activity resulted in desirable effects. 
+Using longitudinal study for causal inference can be challeging. Lacking randomized controlled experiments, or natural experiments, we see the next best choice in [propensity score matching methods](http://en.wikipedia.org/wiki/Propensity_score_matching). 
+
+Bayesian Times series analysis may be used to study the effect of promotional activity on user behavior. 
 
 ##### Interaction between users
 Social Network analysis.
